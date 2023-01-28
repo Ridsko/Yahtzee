@@ -1,0 +1,277 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: default;
+    background-color: rgb(51, 67, 80);
+    
+}
+
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 60px;
+    margin-left: 35%;
+    margin-top: 1%;
+    width: 600px;
+    height: 100px;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 3%;
+}
+
+.dice1, .dice2, .dice3, .dice4, .dice5{
+    background-color: rgb(255, 0, 242);
+    border-radius: 4px;
+    width: 50px;
+    height: 50px; 
+    display: grid;
+    justify-items: center;
+    align-items:center;
+}
+
+.b1, .b2, .b3, .b4, .b5{
+    border-radius: 4px;
+    font-size: 19px;
+    text-align: center;
+    background-color: aqua;
+    transition: 0.3s;
+    border-radius: 4px;
+    opacity: 0.8;
+    display: none;
+}
+
+.b:hover{
+    border-radius: 4px;
+    font-size: 19px;
+    text-align: center;
+    background-color: rgb(255, 0, 242);
+}
+
+
+
+.b1:focus{
+    border-radius: 4px;
+    font-size: 19px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.itemm1,.item1{grid-area: 1;}
+.itemm2,.item2{grid-area: 2;}
+.itemm3,.item3{grid-area: 3;}
+.itemm4,.item4{grid-area: 4;}
+.itemm5,.item5{grid-area: 5;}
+.itemm6,.item6{grid-area: 6;}
+.itemm7,.item7{grid-area: 7;}
+.itemm8,.item8{grid-area: 8;}
+.itemm9,.item9{grid-area: 9;}
+.itemm10,.item10{grid-area: 10;}
+
+
+
+.upper{
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: auto auto;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height:80%;
+    font-size: 23px;
+    margin-left: 15px;
+    text-align: center;
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+
+
+.upper > div{
+    width: 100px;
+    border:2px solid black;
+}
+
+
+
+.lower{
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: auto auto;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height:80%;
+    font-size: 23px;
+    margin-left: 15px;
+    text-align: center;
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+
+
+.lower > div{
+    width: 100px;
+    border:2px solid black;
+}
+
+.knoppen{
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+    width: 400px;
+    margin-left: 40%;
+}
+
+.knop{
+    margin-top: 0%;
+   /* margin-left: 50%;*/
+    font-size: 16px;
+    border:none;
+    width:200px;
+    height: 30px;
+    text-align: center;
+    background-color: blueviolet;
+    transition: 0.3s;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+
+.knop:hover{
+    font-size: 16px;
+    text-decoration: none;
+    border:none;
+    width:200px;
+    height: 30px;
+    background-color: rgb(255, 0, 242);
+}
+
+.knopr{
+    margin-top: 0%;
+  /*  margin-left: 40%; */
+    font-size: 16px;
+    border:none;
+    width:200px;
+    height: 30px;
+    text-align: center;
+    background-color: blueviolet;
+    transition: 0.3s;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+
+.knopr:hover{
+    font-size: 16px;
+    text-decoration: none;
+    border:none;
+    width:200px;
+    height: 30px;
+    background-color: rgb(255, 0, 242);
+}
+
+
+
+.popup{
+   background-color: white;
+   height: 30%;
+   width:20%;
+   display: none;
+   
+}
+
+@media (max-width: 1000px) and (max-height:500px){
+
+.container{
+    width: 450px;
+    margin-left: 20%;
+    column-gap: 30px;
+    
+}
+
+.knoppen{
+    
+    margin-left: 23%;
+   
+}
+
+.upper{
+    margin-left: 35%;
+}
+
+.lower{
+    margin-left:35%;
+}
+
+.dice1, .dice2, .dice3, .dice4, .dice5{
+    width: 50px;
+}
+
+.b1, .b2, .b3, .b4, .b5{
+    width: 50px;
+}
+
+}
+
+@media (max-width: 425px){
+
+    .container{
+        width: 260px;
+        margin-left: 15%;
+        column-gap: 10px;
+        
+        
+    }
+    
+.upper{
+    margin-left: 20%;
+}
+
+.lower{
+    margin-left:20%;
+}
+
+    .knoppen{
+        width: 260px;
+        margin-left: 15%;
+        column-gap: 10px;
+       
+    }
+
+    .knop, .knopr{
+        width: 100px;
+    }
+    
+    .dice1, .dice2, .dice3, .dice4, .dice5{
+        width: 30px;
+        height:35px;
+        font-size: 8px;
+    }
+    
+    .b1, .b2, .b3, .b4, .b5{
+        width: 28px;
+        font-size: 8px;
+    }
+
+    .b:hover{
+        font-size: 8px;
+    }
+
+    .knop:hover{
+        width: 100px;
+    }
+
+    .knopr:hover{
+        width: 100px;
+    }
+}
